@@ -1,0 +1,73 @@
+<div class="panel panel-primary">
+  <div class="panel-heading" style="font-size: x-large; font-weight: bolder;">
+    Sprint Planning Data
+  </div>
+  <div class="row">
+    &nbsp;
+  </div>
+  <div class="row">
+    &nbsp;
+  </div>
+  <div>
+    <table class="table-float">
+      <tr>
+        <td *ngFor="let data of sprintPlanningList ">
+          <span style="align-items: center;font-weight: bolder; color: blueviolet;font-size: large"> &nbsp; {{ data.teamMember }} &nbsp;</span>
+          <br/>
+          <br/>
+          <button *ngIf="!showPoints" [ngClass]="{'points-received' : data.points > 0 }" style="cursor: not-allowed;" class="button-th-points">got'em</button>
+          <button *ngIf="showPoints" style="cursor: not-allowed;" class="button-th" [id]="data.id"> {{ data.points ? data.points : '0' }}</button>
+        </td>
+      </tr>
+    </table>
+    <table *ngIf="sprintPlanningList.length > 0" class="table-float-2">
+      <tr>
+        <td>
+          <button color="primary" mat-raised-button
+          matTooltipClass="tooltip" (click)="Flip()"><mat-icon>cameraswitch</mat-icon>&nbsp;Flip
+          </button>
+        </td>
+        <td>
+          <button color="primary" mat-raised-button
+          matTooltipClass="tooltip" (click)="Reset()"><mat-icon>restart_alt</mat-icon>&nbsp;Reset
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div *ngIf="!adminView">
+    <table class="table-Bingo">
+      <tr>
+        <th>
+          <button class="button-th" style="cursor: pointer;" (click)="createUpdateSprintPlanningData('1')">1</button>
+        </th>
+        <th>
+          <button class="button-th" style="cursor: pointer;" (click)="createUpdateSprintPlanningData('3')">3</button>
+        </th>
+        <th>
+          <button class="button-th" style="cursor: pointer;" (click)="createUpdateSprintPlanningData('5')">5</button>
+        </th>
+        <th>
+          <button class="button-th" style="cursor: pointer;" (click)="createUpdateSprintPlanningData('8')">8</button>
+        </th>
+        <th>
+          <button class="button-th" style="cursor: pointer;" (click)="createUpdateSprintPlanningData('13')">13</button>
+        </th>
+        <th>
+          <button class="button-th" style="cursor: pointer;" (click)="createUpdateSprintPlanningData('21')">21</button>
+        </th>
+      </tr>
+    </table>
+  </div>
+  <div *ngIf="!adminView">
+    <table>
+      <tr>
+        <th>
+          <br/>
+          <br/>
+          <span style="align-items: center;font-weight: bolder; color: blueviolet;font-size: large"> &nbsp; {{ selectedPoints !== '' ? selectedPoints : '' }} &nbsp;</span>
+        </th>
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="toolbar" role="banner">
+  <div class="header-account-settings"><button (click)="ClearCache()" mat-button>
+      <mat-icon>delete</mat-icon>&nbsp;Clear Data
+    </button>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading" style="font-size: x-large; font-weight: bolder">
+    Welcome {{ userName && userName !== "" ? userName + "!!!" : "" }}
+  </div>
+  <div class="row">&nbsp;</div>
+  <div class="row" *ngIf="!userName || userName === ''">
+    <button color="primary" mat-raised-button matTooltip="enter user name" matTooltipClass="tooltip" (click)="openDialog()">
+      <mat-icon>update</mat-icon>
+    </button>
+  </div>
+  <div class="row">&nbsp;</div>
+  <div *ngIf="userName != ''">
+    <app-data-board [Admin]='false' [userName]='userName' [headerData]='headerData'></app-data-board>
+  </div>
+</div>

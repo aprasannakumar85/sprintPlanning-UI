@@ -1,0 +1,153 @@
+/*@import '@angular/material/prebuilt-themes/pink-bluegrey.css';*/
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.table-Header{
+  font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;
+}
+
+
+.mat-tooltip.tooltip {
+  background-color: darkblue;
+  font-size: 12px;
+}
+
+.table-float {
+  border-spacing:30px; border-width: 10px;
+  position:absolute; left:420px; top:500px;
+  border-color: lightskyblue; background-color:#FFCCCB;
+}
+.table-float-2 {
+  border-spacing:30px; border-width: 10px;
+  position:absolute;left:1020px;  top:720px;
+  border-color: lightskyblue; background-color:#FFCCCB;
+}
+
+.table-Bingo{
+  border-color: lightskyblue; background-color:#FFCCCB;
+}
+
+.button-th{
+  background-color: lightskyblue;
+  width: 150px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.button-th-points{
+  background-color: orangered;
+  width: 150px;
+  font-weight: bolder;
+  font-size: x-large;
+  text-decoration: line-through;
+}
+
+.th_WentWell {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th_Improve {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #210d47;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th_Kudos {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1bafaf;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.th_Action {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #d31f1f;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.td_WentWell {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #bfc7c4;
+  color: rgb(32, 3, 3);
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.td_AddNew {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: mediumaquamarine;
+  color: white;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.header-account-settings {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  color: rosybrown;
+  text-align: right;
+  align-content: right;
+  align-items: right;
+}
+
+.points-received{
+  text-decoration: solid;
+  color:green;
+  background-color: orange;
+  font-weight: bolder;
+}
